@@ -27,7 +27,7 @@ $(".agregar").on("click",function(e){
         alert(lista);
         /*$(".Lista").append(`
             <div><li class = "lis"><p>${valor}</p><button class = "checar" type = "text">Check</button><button class = "del" type = "text">Delete</button><br></div>`
-        );*/
+        );*/ 
     }
 })
 $(".Lista").on("click",".checar",function(e){
