@@ -4,7 +4,8 @@ $(".agregar").on("click",function(e){
     var valor = $("#newText").val();
     //alert(valor);
     if(valor != ""){
-        var lista = $(".Lista");
+        //Forma 1
+        /*var lista = $(".Lista");
         var div = $("<div>");
         var li = $("<li>");
         var entrada1 = $("<button>");
@@ -24,10 +25,12 @@ $(".agregar").on("click",function(e){
         li.addClass("lis");
         div.append(li);
         lista.append(div);
-        alert(lista);
-        /*$(".Lista").append(`
+        alert(lista);*/
+        
+        //Forma 2
+        $(".Lista").append(`
             <div><li class = "lis"><p>${valor}</p><button class = "checar" type = "text">Check</button><button class = "del" type = "text">Delete</button><br></div>`
-        );*/ 
+        ); 
     }
 })
 $(".Lista").on("click",".checar",function(e){
